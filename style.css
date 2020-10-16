@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-image: url('./img/bg.png');
+    background-size: cover;
+}
+
+.container{
+    margin: 100px auto;
+    width: 80%;
+    background-color: #252729cb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(255, 253, 253, 0.8);
+    animation: bounce 1.5s; 
+    animation-direction: alternate; 
+    animation-iteration-count: infinite; 
+}
+
+@keyframes bounce {
+    from { transform: translate3d(0, 0, 0);} 
+    to { transform: translate3d(0, 30px, 0);}
+}
+
+header{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.name{
+    margin-left: 30px;
+}
+
+h4{
+    color: white;
+    font-weight: bolder;
+}
+
+.name h6{
+    color: rgba(255, 255, 255, 0.6);
+    position: relative;
+    bottom: 20px;
+    font-size: xx-small;
+    font-weight: lighter;
+    line-height: 15px;
+}
+
+header img{
+   margin-top: 25px;
+   margin-left: 100px;
+   cursor: pointer;
+}
+
+.content{
+    margin-left: 60px;
+    margin-top: 70px;
+}
+
+.content h3{
+    margin: 0 0;
+    color: white;
+}
+
+.content h1{
+    margin: 8px 0;
+    color: white;
+}
+
+.content h6{
+    line-height: 15px;
+    margin: 12px 0;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.content img{
+    margin-top: 10px;
+    width: 90px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.content img:hover{
+    width: 100px;
+}
+
+.socials{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.socials img{
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+#menu-hide{
+    display: none;
+}
+
+.menu-unhide{
+    position: absolute;
+    left: 85%;
+    bottom: 60%;
+    color: white;
+    display: inline !important;
+}
+
+.menu-unhide h4{
+    transition: all 0.1s ease;  
+}
+
+.menu-unhide h4:hover{
+    cursor: pointer;
+    color: rgb(82, 82, 247) !important;
+    border-radius: 15px;
+}
+  
+
+
+@media only screen and (max-width: 480px){
+
+    header{
+        display: grid;
+        grid-template-columns: 1fr .7fr;
+    }
+
+    h4{
+        font-size: x-small;
+    }
+
+    .name{
+        margin-left: 5px;
+    }
+
+    .name h6{
+        font-size: 7px;
+        bottom: 15px;
+    }
+
+    header img{
+        margin-top: 15px;
+        width: 15px;
+    }
+
+    .content{
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    .content h3{
+        font-size: smaller;
+    }
+    
+    .content h1{
+        font-size: 20px;
+    }
+    .content h6{
+        line-height: 12px;
+        font-size: 7px;
+    }
+    
+    .content img{
+        width: 55px;
+    }
+    
+    .socials{
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 8netlify deploypx;
+    }
+
+    .socials img{
+        padding: 0 5px;
+        cursor: pointer;
+        width: 10px;
+    }
+
+    .menu-unhide{
+        position: absolute;
+        left: 81%;
+        bottom: 67%;
+        color: white;
+        display: inline !important;
+    }
+    
+    .menu-unhide h4{
+       font-size: 7px !important; 
+    }
+
+
+.name h6{
+    bottom: 16px;
+    font-size: 7px;
+    font-weight: lighter;
+    line-height: 9px;
+}
+}
