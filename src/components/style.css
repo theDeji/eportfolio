@@ -43,6 +43,7 @@ h4{
     bottom: 20px;
     font-size: xx-small;
     font-weight: lighter;
+    line-height: 15px;
 }
 
 header img{
@@ -76,6 +77,11 @@ header img{
     margin-top: 10px;
     width: 90px;
     cursor: pointer;
+    transition: all 1s ease;
+}
+
+.content img:hover{
+    width: 100px;
 }
 
 .socials{
@@ -88,6 +94,30 @@ header img{
     padding: 0 10px;
     cursor: pointer;
 }
+
+#menu-hide{
+    display: none;
+}
+
+.menu-unhide{
+    position: absolute;
+    left: 85%;
+    bottom: 60%;
+    color: white;
+    display: inline !important;
+}
+
+.menu-unhide h4{
+    transition: all 0.1s ease;  
+}
+
+.menu-unhide h4:hover{
+    cursor: pointer;
+    color: rgb(82, 82, 247) !important;
+    border-radius: 15px;
+}
+  
+
 
 @media only screen and (max-width: 480px){
 
@@ -138,7 +168,7 @@ header img{
     .socials{
         text-align: left;
         margin-top: 20px;
-        margin-bottom: 8px;
+        margin-bottom: 8netlify deploypx;
     }
 
     .socials img{
@@ -146,4 +176,24 @@ header img{
         cursor: pointer;
         width: 10px;
     }
+
+    .menu-unhide{
+        position: absolute;
+        left: 81%;
+        bottom: 67%;
+        color: white;
+        display: inline !important;
+    }
+    
+    .menu-unhide h4{
+       font-size: 7px !important; 
+    }
+
+
+.name h6{
+    bottom: 16px;
+    font-size: 7px;
+    font-weight: lighter;
+    line-height: 9px;
+}
 }
