@@ -1,98 +1,100 @@
-import React, {useState} from 'react'
+import React, { useState } from "react";
 
-import './style.css';
-import menu from './img/menu.png'
-import twitter from './img/twitter.png'
-import github from './img/github.png'
-import linkedin from './img/linkedin.png'
-import mail from './img/mail.png'  
-import hire from './img/hire.png' 
+import "./style.css";
+import menu from "./img/menu.png";
+import twitter from "./img/twitter.png";
+import github from "./img/github.png";
+import linkedin from "./img/linkedin.png";
+import mail from "./img/mail.png";
+import hire from "./img/hire.png";
 
 const Home = () => {
+  const [toggle, setToggle] = useState("True");
 
-    const [toggle, setToggle] = useState('True')
-
-    const showMenu = () =>{
-        if(toggle === 'False'){
-            document.getElementById('menu-hide').className=""
-            setToggle()
-        }else{
-            document.getElementById('menu-hide').className="menu-unhide"
-            setToggle('False')
-        }
-        
+  const showMenu = () => {
+    if (toggle === "False") {
+      document.getElementById("menu-hide").className = "";
+      setToggle();
+    } else {
+      document.getElementById("menu-hide").className = "menu-unhide";
+      setToggle("False");
     }
+  };
 
-    const hireMe = () =>{
-        window.location.href = "mailto:emmi2110@gmail.com";
-    }
+  const hireMe = () => {
+    window.location.href = "mailto:emmi2110@gmail.com";
+  };
 
-    const navGithub = () =>{
-        window.location.href = "http://www.github.com/theDeji";
-    }
+  const navGithub = () => {
+    window.location.href = "http://www.github.com/theDeji";
+  };
 
-    const navProjects = () =>{
-        window.location.href = "https://github.com/theDeji?tab=repositories";
-    }
+  const navProjects = () => {
+    window.location.href = "https://github.com/theDeji?tab=repositories";
+  };
 
-    const navLinkedin = () =>{
-        window.location.href = "https://www.linkedin.com/in/adeniyi-emmanuel-7b2918124";
-    }
+  const navLinkedin = () => {
+    window.location.href =
+      "https://www.linkedin.com/in/adeniyi-emmanuel-7b2918124";
+  };
 
-    const navMail = () =>{
-        window.location.href = "mailto:emmi2110@gmail.com";
-    }
+  const navMail = () => {
+    window.location.href = "mailto:emmi2110@gmail.com";
+  };
 
-    const navTwitter = () =>{
-        window.location.href = "https://twitter.com/emidee_";
-    }
+  const navTwitter = () => {
+    window.location.href = "https://twitter.com/emidee_";
+  };
 
-    const navCV = () =>{
-        window.location.href = "https://github.com/theDeji/resume/raw/master/CV.pdf"
-    }
+  const navCV = () => {
+    window.location.href =
+      "https://github.com/theDeji/resume/raw/master/CV.pdf";
+  };
 
-    const navDesigns = () =>{
-        window.open(
-            "https://dejisdribbble.netlify.app",
-            "_blank"
-        )
-    }
+  const navDesigns = () => {
+    window.open("https://dejisdribbble.netlify.app", "_blank");
+  };
 
-    return(
-        <div className="container">
-            <div className="test"></div>
-            <header>
-                <div className="name">
-                    <h4>ADENIYI EMMANUEL</h4>
-                    <h6>UI/UX Designer | Software Developer <br/>
-                    (234) 815 7123 560 | emmi2110@gmail.com</h6>
-                </div>
-                <img src={menu} onClick={showMenu}/>
-            </header>
-
-            <div className="content">
-                <h3>Hello,</h3>
-                <h1>I'm Emmanuel</h1>
-                <h6>I am a UI/UX Designer and Software Developer. I love designing and building <br/>
-                products for solving problems and making the world a better place by helping others.</h6>
-                <img src={hire} onClick={hireMe}/>
-            </div>
-
-            <div className="socials">
-                <img src={github} onClick={navGithub}/>
-                <img src={linkedin} onClick={navLinkedin}/>
-                <img src={mail} onClick={navMail}/>
-                <img src={twitter} onClick={navTwitter}/>
-            </div>
-
-            <div id="menu-hide">
-                <h4 onClick={navProjects}>Projects</h4>
-                <h4 onClick={navDesigns}>Designs</h4>
-                <h4 onClick={navCV}>My CV</h4>
-            </div>
+  return (
+    <div className="container">
+      <div className="test"></div>
+      <header>
+        <div className="name">
+          <h4>ADENIYI EMMANUEL</h4>
+          <h6>
+            Software Engineer | UI/UX Designer <br />
+            (234) 815 7123 560 | emmi2110@gmail.com
+          </h6>
         </div>
-    )
+        <img src={menu} onClick={showMenu} />
+      </header>
 
-}
+      <div className="content">
+        <h3>Hello,</h3>
+        <h1>I'm Deji</h1>
+        <h6>
+          I am a UI/UX Designer and Software Engineer. I love designing and
+          building <br />
+          products for solving problems and making the world a better place by
+          helping others.
+        </h6>
+        <img src={hire} onClick={hireMe} />
+      </div>
+
+      <div className="socials">
+        <img src={github} onClick={navGithub} />
+        <img src={linkedin} onClick={navLinkedin} />
+        <img src={mail} onClick={navMail} />
+        <img src={twitter} onClick={navTwitter} />
+      </div>
+
+      <div id="menu-hide">
+        <h4 onClick={navProjects}>Projects</h4>
+        <h4 onClick={navDesigns}>Designs</h4>
+        <h4 onClick={navCV}>My CV</h4>
+      </div>
+    </div>
+  );
+};
 
 export default Home;
