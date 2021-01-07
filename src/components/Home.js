@@ -53,7 +53,7 @@ const Home = () => {
 
     const navDesigns = () =>{
         window.open(
-            "https://www.figma.com/proto/VLHK4Ah5M9K1s8T5b1VpvH/Untitled?node-id=37%3A17&viewport=66%2C224%2C0.04792235791683197&scaling=min-zoom",
+            "https://dejisdribbble.netlify.app",
             "_blank"
         )
     }
@@ -71,7 +71,7 @@ const Home = () => {
             </header>
 
             <div className="content">
-                <h3>Hi,</h3>
+                <h3>Hello,</h3>
                 <h1>I'm Emmanuel</h1>
                 <h6>I am a UI/UX Designer and Software Developer. I love designing and building <br/>
                 products for solving problems and making the world a better place by helping others.</h6>
