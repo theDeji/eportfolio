@@ -53,7 +53,7 @@ const Home = () => {
 
     const navDesigns = () =>{
         window.open(
-            "https://www.figma.com/proto/VLHK4Ah5M9K1s8T5b1VpvH/Untitled?node-id=37%3A17&viewport=66%2C224%2C0.04792235791683197&scaling=min-zoom",
+            "https://dejisdribbble.netlify.app",
             "_blank"
         )
     }
