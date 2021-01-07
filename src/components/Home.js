@@ -73,7 +73,7 @@ const Home = () => {
         <h3>Hello,</h3>
         <h1>I'm Deji</h1>
         <h6>
-          I am a UI/UX Designer and Software Engineer. I love designing and
+          I am a Software Engineer and UI/UX Designer . I love designing and
           building <br />
           products for solving problems and making the world a better place by
           helping others.
